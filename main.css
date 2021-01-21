@@ -1,0 +1,75 @@
+:root{
+    --yellow_color:rgb(176, 224, 0);
+}
+
+*{
+    color: rgb(78, 78, 78);
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow-y: scroll;
+}
+nav,footer{
+    margin-top: 0;
+    background: var(--yellow_color);
+    padding: 1.5rem;
+    text-align: center;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    /* align-items: center; */
+}
+section > div{
+    width: 70%;
+    height: 190px;
+    margin: 10px;
+    color: white;
+}
+textarea{
+    padding: 0.5rem;
+    width: 96%;
+}
+button{
+    background: var(--yellow_color);
+    padding: 1.5rem;
+    border-width: 0;
+    float: left;
+}
+section > div > div{
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border: 2px solid rgb(161, 161, 161);
+}
+footer{
+    position: fixed;
+    padding: 0;
+    right: 0rem;
+    width: 100%;
+    min-height: 6rem;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer > div{
+    margin: 1.6rem;
+}
+footer > div > p{
+    max-width: 400px;
+}
